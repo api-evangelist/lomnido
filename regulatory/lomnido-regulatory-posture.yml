@@ -1,0 +1,20 @@
+generated: '2026-10-21'
+method: probed
+source: https://lomnido.com/datenschutz
+signals:
+  - name: data_subject_request
+    evidence:
+      source: https://lomnido.com/datenschutz
+      http_status: 200
+      fetched: true
+      quote: "Ihnen stehen hinsichtlich der Sie betreffenden personenbezogenen Daten grundsätzlich die folgenden Rechte zu: Recht auf Auskunft (Art. 15 DSGVO) Recht auf Berichtigung (Art. 16 DSGVO) Recht auf Löschung (Art. 17 DSGVO) Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO) Recht auf Datenübertragbarkeit (Art. 20 DSGVO) Recht auf Widerspruch (Art. 21 DSGVO)"
+      section: "2. Ihre Rechte"
+      note: "Lists data subject rights such as access, correction, deletion, restriction, portability and objection."
+  - name: data_retention
+    evidence:
+      source: https://lomnido.com/datenschutz
+      http_status: 200
+      fetched: true
+      quote: "Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen..."
+      section: "Einleitung"
+      note: "No specific retention period is stated, only a general statement of lawful processing."

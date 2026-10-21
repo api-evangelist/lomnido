@@ -1,23 +1,70 @@
 aid: lomnido
+
 name: Lomnido
-description: 'Lomnido is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/68af1108f419a7c7ceedb9b2/6a4f77630ccd41f07f9c0c55_Open%20graph%20Image%20ServiceHub.jpg
+
+description: 'Lomnido – ServiceHub ist eine digitale Plattform, die die Provider‑Steuerung in ITSM‑ und ESM‑Umgebungen automatisiert. Sie digitalisiert Prozesse, verbindet Tools und ermöglicht klare KPIs, reibungslose Abläufe und Top‑Service für Unternehmen. Das System unterstützt Multi‑Provider‑Strukturen, verbessert Zusammenarbeit und reduziert Reibungsverluste, wodurch Kunden schneller starten und ihre Service‑Collaboration optimieren können.'
+
 url: https://raw.githubusercontent.com/api-evangelist/lomnido/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- ServiceHub
+- ITSM
+- ProviderManagement
+- Collaboration
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/lomnido-hosts.yml
+- type: Vendors
+  url: vendors/lomnido-vendors.yml
+- type: DomainSecurity
+  url: security/lomnido-domain-security.yml
 - type: Website
   url: https://lomnido.com/
+- type: Documentation
+  url: https://lomnido.com/resources-overview
+- type: Contact
+  url: https://lomnido.com/kontakt
+- type: Legal
+  url: https://lomnido.com/impressum
+- type: PrivacyPolicy
+  url: https://lomnido.com/datenschutz
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The Lomnido website is a JavaScript‑rendered single‑page app with no machine‑readable API spec discovered.
+  evidence:
+    - url: https://lomnido.com
+      status: 200
+  checked: '2026-10-21'
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
